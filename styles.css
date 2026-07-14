@@ -1,0 +1,377 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    font-family: 'Inter', sans-serif;
+    background:#ffffff;
+    color:#222;
+}
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+header{
+    width:100%;
+    background:white;
+    border-bottom:1px solid #ddd;
+}
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 0;
+}
+.logo{
+    font-size:20px;
+    font-weight:bold;
+    line-height:20px;
+}
+nav ul{
+    list-style:none;
+    display:flex;
+}
+nav ul li{
+    margin:0 18px;
+}
+nav ul li a{
+    text-decoration:none;
+    color:#444;
+    font-size:15px;
+}
+nav ul li a:hover{
+    color:#2d5bff;
+}
+.btn{
+    background:#2d5bff;
+    color:white;
+    text-decoration:none;
+    padding:10px 22px;
+    border-radius:5px;
+    font-size:15px;
+}
+.btn:hover{
+    background:#1748f5;
+}
+.hero{
+    background-image:url("Banner.jpeg");
+    background-size:cover;
+    background-position:center;
+    height:600px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.overlay{
+    background:rgba(0,0,0,0.60);
+    width:100%;
+    height:100%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+    padding:20px;
+}
+.hero h1{
+    font-size:60px;
+    margin-bottom:20px;
+}
+
+.hero h1 i{
+    font-style:italic;
+}
+.hero p{
+    width:700px;
+    max-width:90%;
+    font-size:18px;
+    line-height:30px;
+    margin-bottom:35px;
+}
+.hero-btn{
+    background:#2d5bff;
+    color:white;
+    text-decoration:none;
+    padding:15px 35px;
+    border-radius:6px;
+    font-size:18px;
+}
+.hero-btn:hover{
+    background:#1748f5;
+}
+section{
+    padding:70px 0;
+}
+section h2{
+    text-align:center;
+    font-size:42px;
+    margin-bottom:15px;
+}
+.price-text{
+    text-align:center;
+    color:gray;
+    margin-bottom:50px;
+}
+.speakers{
+    background:#f7f7f7;
+    padding:80px 0;
+}
+.speakers h2{
+    text-align:center;
+    font-size:45px;
+    margin-bottom:50px;
+}
+.speaker-container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:30px;
+}
+.card{
+    background:white;
+    border:1px solid #ddd;
+    border-radius:8px;
+    overflow:hidden;
+}
+.card img{
+    width:100%;
+    height:280px;
+    object-fit:cover;
+}
+.card-body{
+    padding:20px;
+}
+.card-body small{
+    color:#2d5bff;
+    font-size:12px;
+    font-weight:bold;
+    text-transform:uppercase;
+}
+.card-body h3{
+    margin-top:8px;
+    margin-bottom:8px;
+    font-size:24px;
+}
+.card-body p{
+    color:#666;
+    font-size:15px;
+    line-height:24px;
+}
+.card:hover{
+    box-shadow:0 5px 15px rgba(0,0,0,0.15);
+    transition:0.3s;
+}
+.pricing{
+    background:#ffffff;
+    padding:80px 0;
+}
+.price-container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+.price-card{
+    background:#f8f8f8;
+    border:1px solid #ddd;
+    border-radius:10px;
+    padding:30px;
+    text-align:center;
+}
+.active{
+    background:#2d5bff;
+    color:white;
+}
+.price-card h4{
+    font-size:18px;
+    margin-bottom:15px;
+}
+.price-card h2{
+    font-size:45px;
+    margin-bottom:10px;
+}
+.price-card p{
+    color:#666;
+    margin-bottom:25px;
+}
+.active p{
+    color:white;
+}
+.price-card ul{
+    list-style:none;
+    text-align:left;
+    margin-bottom:30px;
+}
+.price-card ul li{
+    padding:10px 0;
+    border-bottom:1px solid #ddd;
+    font-size:15px;
+}
+.active ul li{
+    border-bottom:1px solid rgba(255,255,255,0.3);
+}
+.price-card button{
+    width:100%;
+    padding:14px;
+    border:none;
+    background:#2d5bff;
+    color:white;
+    font-size:16px;
+    border-radius:6px;
+    cursor:pointer;
+}
+.active button{
+    background:white;
+    color:#2d5bff;
+    font-weight:bold;
+}
+.price-card:hover{
+    transform:translateY(-8px);
+    transition:0.3s;
+    box-shadow:0 8px 20px rgba(0,0,0,0.15);
+}
+.challenge {
+    background-color: #0f172a;
+    color: white;
+    padding: 70px 20px;
+    text-align: center;
+}
+.challenge-content {
+    width: 80%;
+    margin: auto;
+}
+.challenge h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.challenge-text {
+    font-size: 18px;
+    color: #d1d5db;
+    max-width: 700px;
+    margin: 0 auto 40px auto;
+    line-height: 1.6;
+}
+.challenge-box {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+.box {
+    background-color: white;
+    color: black;
+    width: 250px;
+    padding: 25px;
+    border-radius: 10px;
+}
+.box h3 {
+    color: #2563eb;
+    margin-bottom: 10px;
+}
+.box p {
+    font-size: 15px;
+    line-height: 1.5;
+}
+.challenge-btn {
+    display: inline-block;
+    background-color: #2563eb;
+    color: white;
+    text-decoration: none;
+    padding: 15px 35px;
+    border-radius: 6px;
+    font-weight: bold;
+}
+.challenge-btn:hover {
+    background-color: #1d4ed8;
+}
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:30px 20px;
+}
+footer p{
+    font-size:16px;
+}
+@media screen and (max-width:992px){
+    .hero h1{
+        font-size:45px;
+    }
+    .hero p{
+        font-size:16px;
+    }
+    .speaker-container{
+        grid-template-columns:1fr;
+    }
+    .price-container{
+        grid-template-columns:1fr;
+    }
+    .ai-container{
+        grid-template-columns:1fr;
+    }
+}
+@media screen and (max-width:768px){
+    .navbar{
+        flex-direction:column;
+        text-align:center;
+    }
+    nav ul{
+        flex-direction:column;
+        margin:20px 0;
+    }
+    nav ul li{
+        margin:10px 0;
+    }
+    .btn{
+        margin-top:10px;
+    }
+    .hero{
+        height:500px;
+    }
+    .hero h1{
+        font-size:35px;
+    }
+    .hero p{
+        width:90%;
+        font-size:15px;
+        line-height:25px;
+    }
+    .hero-btn{
+        padding:12px 25px;
+        font-size:16px;
+    }
+    section h2{
+        font-size:32px;
+    }
+    .card img{
+        height:220px;
+    }
+}
+@media screen and (max-width:480px){
+    .logo{
+        font-size:18px;
+    }
+    .hero h1{
+        font-size:28px;
+    }
+    .hero p{
+        font-size:14px;
+    }
+    .price-card h2{
+        font-size:36px;
+    }
+    .ai-box h3{
+        font-size:20px;
+    }
+    footer p{
+        font-size:14px;
+    }
+}
